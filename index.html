@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aum Gujarati & Punjabi Restaurant</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background: #b30000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #ffcc00;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background: #b30000;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #800000;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Aum Gujarati & Punjabi Restaurant</h1>
+  <p>Authentic Taste of Gujarat & Punjab</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#menu">Menu</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+  Delicious Food, Great Taste!
+</div>
+
+<section id="menu">
+  <h2>Our Menu</h2>
+  <div class="menu">
+
+    <div class="card">
+      <h3>Gujarati Thali</h3>
+      <p>Dal, Sabzi, Roti, Rice, Sweet</p>
+      <button onclick="order('Gujarati Thali')">Order</button>
+    </div>
+
+    <div class="card">
+      <h3>Punjabi Thali</h3>
+      <p>Paneer Butter Masala, Naan, Dal Makhani</p>
+      <button onclick="order('Punjabi Thali')">Order</button>
+    </div>
+
+    <div class="card">
+      <h3>Chole Bhature</h3>
+      <p>Spicy chickpeas with fried bread</p>
+      <button onclick="order('Chole Bhature')">Order</button>
+    </div>
+
+    <div class="card">
+      <h3>Jalebi Rabdi</h3>
+      <p>Sweet crispy jalebi with rabdi</p>
+      <button onclick="order('Jalebi Rabdi')">Order</button>
+    </div>
+
+  </div>
+  <div class="card">
+    <h4>Cold drinks</h4>
+    <p>cold drinks and ice cream</p>
+    <button onclick="oder('Cold drink')">Order</button>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    Welcome to Aum Gujarati & Punjabi Restaurant. We serve authentic vegetarian
+    dishes inspired by traditional Indian home cooking with rich flavors and love.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>📍 Vadodara, Gujarat</p>
+  <p>📞 +91 98765 43210</p>
+  <p>📧 aumrestaurant@example.com</p>
+</section>
+
+<footer>
+  <p>© 2026 Aum Gujarati & Punjabi Restaurant. All rights reserved.</p>
+</footer>
+
+<script>
+  function order(item) {
+    alert("You selected: " + item + ". We will contact you soon!");
+  }
+</script>
+
+</body>
+</html>
