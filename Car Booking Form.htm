@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="Car%20Booking%20Form_files/client"></script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5174/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-form</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/Mihir Joshi/OneDrive/Desktop/project/react/login-form/LOGIN-FORM/src/index.css">:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/Mihir Joshi/OneDrive/Desktop/project/react/login-form/LOGIN-FORM/src/App.css">* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Center Container */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Booking Form Card */
+.booking-form {
+  width: 380px;
+  padding: 40px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  animation: slideUp 0.8s ease;
+}
+
+/* Heading */
+.booking-form h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 25px;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+/* Inputs & Select */
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 14px;
+  outline: none;
+  font-size: 16px;
+
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+
+  transition: all 0.3s ease;
+}
+
+/* Placeholder Color */
+.booking-form input::placeholder {
+  color: #e0e0e0;
+}
+
+/* Focus Animation */
+.booking-form input:focus,
+.booking-form select:focus {
+  transform: scale(1.03);
+  background: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.35);
+}
+
+/* Dropdown Text */
+.booking-form select option {
+  color: black;
+}
+
+/* Button */
+.booking-form button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 18px;
+
+  border: none;
+  border-radius: 40px;
+
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* Button Hover */
+.booking-form button:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 114, 255, 0.5);
+}
+
+/* Button Click */
+.booking-form button:active {
+  transform: scale(0.98);
+}
+
+/* Form Animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}</style></head>
+  <body>
+    <div id="root"><div class="container"><form class="booking-form"><h1>Car Booking Form</h1><input placeholder="Enter Your Name" required="" type="text" name="name"><input placeholder="Enter Your Email" required="" type="email" name="email"><select name="car" required=""><option value="" selected="selected">Select Car</option><option value="BMW">BMW</option><option value="Audi">Audi</option><option value="Mercedes">Mercedes</option><option value="Tesla">Tesla</option></select><input required="" type="date" name="pickup"><input placeholder="Number of Days" required="" type="number" name="days"><button type="submit">Book Now</button></form></div></div>
+    <script type="module" src="Car%20Booking%20Form_files/main.jsx"></script>
+  
+
+</body></html>
